@@ -1,0 +1,52 @@
+.form-inline {
+    width: 70%;
+    justify-content: space-between;
+}
+@media (min-width: 576px){
+.form-inline .form-control {
+    width: 50% !important;
+}}
+.bg-white{
+    border: antiquewhite;
+    
+}
+
+
+i.fab.fa-shopify {
+    color:#6ab04c;
+    font-weight: 700 !important;
+}
+@media (min-width: 576px){
+.form-inline .form-control {
+   
+    border: 0;
+}}
+.p-2 {
+        color:rgba(0, 47, 25,1);
+        background: rgba(146, 230, 181,1);
+        border-radius: 3rem;
+    }
+    main {
+        margin-top: 60px;
+    }
+    div#sidebar-wrapper {
+        width: 15% !important;
+        border-right: 1px solid #dfe6e9;
+    }
+    .list-group-flush>.list-group-item {
+      background: #f8f9fa;
+    }
+    a.list-group-item.list-group-item-action.list-group-item-light.p-1 {
+        border-bottom: 0;
+            color: #000;
+        }
+        .card-body.bg-dark.text-white.row {
+            justify-content: space-between;
+        }
+ 
+    
+
+   span.pl-4.span {
+    font-size: 0.8rem;
+    color:rgba(109,113,117,1) !important;
+}
