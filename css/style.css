@@ -30,7 +30,7 @@ i.fab.fa-shopify {
         margin-top: 60px;
     }
     div#sidebar-wrapper {
-        width: 15% !important;
+        width: 18% !important;
         border-right: 1px solid #dfe6e9;
     }
     .list-group-flush>.list-group-item {
@@ -44,9 +44,42 @@ i.fab.fa-shopify {
             justify-content: space-between;
         }
  
-    
-
    span.pl-4.span {
     font-size: 0.8rem;
     color:rgba(109,113,117,1) !important;
+}
+
+a.btn.btn-white {
+    border: 1px solid #d9dee2;
+}
+.card{
+    border-radius: 15px !important;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    border-radius:15px ;
+}
+.img_p{
+  
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    background: #d9d9d9;
+    padding: 0 5px;
+    
+}
+.play{
+    color: #d9d9d9;
+    position:absolute;
+    left: 50%;
+    top: 40%;
+}
+.col-md-4.text-center.bg-light {
+    border-radius: 15px;
+    padding: 50px 0;
 }

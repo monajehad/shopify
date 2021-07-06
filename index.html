@@ -20,7 +20,7 @@
     <title>Hello, world!</title>
 
     <style>
-        .dropdown-menu
+        .dropdown-menu.menu1
         {
             right: 0!important;
             left: unset!important; 
@@ -30,7 +30,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-light bg-white fixed-top p-0">
+        <nav class="navbar navbar-light bg-white fixed-top p-0 ">
 
             <button class="bg-white row no-gutters">
                 <i class="fab fa-shopify fa-2x"></i>
@@ -40,16 +40,19 @@
             <form class="form-inline">
                 <input class="form-control mr-sm-2 bg-light" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn  my-2 my-sm-0" type="submit">
-                    <a class="nav-link " href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown"
+                    <a class="nav-link  " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
                         <span class="p-2">MJ</span>
                         <span class="ml-2" style="color: rgba(0, 47, 25,1);">User_Name</span>
                     </a>
-                    <div class="dropdown-menu bg-dark" aria-labelledby="navbarScrollingDropdown">
+                    <div class="dropdown-menu menu1 bg-dark " aria-labelledby="navbarDropdown"> 
                         <a class="dropdown-item text-white" href="#">Action</a>
-                        <a class="dropdown-item text-white" href="#">Another action</a>
-                        <a class="dropdown-item text-white" href="#">Something else here</a>
-                    </div>
+                         <a class="dropdown-item text-white" href="#">Another action</a>
+                          <div class="dropdown-divider"></div> 
+                          <a class="dropdown-item text-white" href="#">Something else here</a>
+                         </div>
+
+                 
 
                 </button>
             </form>
@@ -59,7 +62,10 @@
         <section>
             <div class="d-flex" id="wrapper">
                 <!-- Sidebar-->
-                <div class="border-end bg-light" id="sidebar-wrapper">
+                <button class="btn bd-search-docs-toggle d-md-none p-0 ml-3 collapsed" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg>
+                  </button>
+                <div class="border-end bg-light " id="sidebar-wrapper">
 
                     <div class="list-group list-group-flush pt-2">
                         <a class="list-group-item list-group-item-action list-group-item-light p-1" href="#!">
@@ -144,18 +150,142 @@
                     </div>
                 </div>
                 <div class="right w-100  ">
-                    <div class="col-md-8 mx-auto mt-5 ">
-                        <div class="card w-75">
-                            <div class="card-body bg-dark text-white row ">
+                    <div class="col-md-7 mx-auto mt-5 mb-4">
+                        <div class="card mb-5">
+                            <div class="card-body bg-dark text-white row no-gutters ">
                                 <div>
                                     <p class="card-text">You have 14 days left of your trial.</p>
                                 </div>
                                 <div>
-                                    <a href="#" class="btn btn-success ">Button</a>
+                                    <a href="#" class="btn btn-success ">select a plan</a>
                                 </div>
                             </div>
                         </div>
+                        
+                        <div class="card  mb-5 " >
+                            <div class="row no-gutters">
+                              <div class="col-md-4">
+                                
+                                        <img class="" src="images/4ab912d5-c697-4010-a0de-a5c25b52f5ac.jfif" alt="">
+                                       <a class="play" > <i class="fas fa-play fa-2x "></i></a>
+                                    </button><p class="img_p">4:55</p>
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                    <div class="dropdown text-right">
+                                        <span id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                                            <i class="fas fa-ellipsis-h"></i>
+                                        </span>
+                                        <div class="dropdown-menu bg-dark " aria-labelledby="dropdownMenu2">
+                                          <button class="dropdown-item text-white" type="button">Action</button>
+                                          <button class="dropdown-item text-white" type="button">Another action</button>
+                                          <button class="dropdown-item text-white" type="button">Something else here</button>
+                                        </div>
+                                      </div>
+                                  <h5 class="card-title">Getting Started</h5>
+                                  <p class="card-text">Discover how Shopify can help you get started on building your business.</p>
+                                  <a href="#" class="btn btn-white ">Learn more about getting started</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="card mb-5" >
+                            <div class="card-body">
+                                <div class="dropdown text-right mb-0">
+                                    <span id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </span>
+                                    <div class="dropdown-menu bg-dark " aria-labelledby="dropdownMenu2">
+                                      <button class="dropdown-item text-white" type="button">Action</button>
+                                      <button class="dropdown-item text-white" type="button">Another action</button>
+                                      <button class="dropdown-item text-white" type="button">Something else here</button>
+                                    </div>
+                                  </div>
+                              <h6 class="card-title">Tipping at checkout is now available for your online store</h6>
+                              <p class="card-text">With tipping at checkout, your customers have the option to tip a percentage of their total order or custom amount.</p>
+                              <a href="#" class="btn btn-white ">Add online tipping</a>
+                              <a href="#" class="card-link  ml-3">Learn more</a>
+                              
+                            </div>
+                          </div>
+
+                          <div class="card mb-5" >
+                            <div class="row no-gutters ">
+                              <div class="col-md-4 text-center bg-light ">
+                                <span><i class="fas fa-book-open fa-3x"></i></span>
+                                <p>SUGGESTED READING</p>
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                    <div class="dropdown text-right mb-0">
+                                        <span id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                                            <i class="fas fa-ellipsis-h"></i>
+                                        </span>
+                                        <div class="dropdown-menu bg-dark " aria-labelledby="dropdownMenu2">
+                                          <button class="dropdown-item text-white" type="button">Action</button>
+                                          <button class="dropdown-item text-white" type="button">Another action</button>
+                                          <button class="dropdown-item text-white" type="button">Something else here</button>
+                                        </div>
+                                      </div>
+                                      <p style="font-size: 0.9rem;">Because you started less than a year ago</p>
+                                      <h6 >Investing can help your business grow, but you should understand your finances first. Learn how with this guide.</h6>
+                                      <div class="row">
+                                        <a href="#" class="btn btn-white ">Read blog post</a>
+                                        <p class="card-text ml-3"><small class="text-muted">10 min read</small></p>
+                                     </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="card mb-3" style="border:1px solid rgba(0,0,0,.125);" >
+                            <div class="card-header bg-transparent " >
+                                <div class="dropdown text-right mb-0">
+                                    <span id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </span>
+                                    <div class="dropdown-menu bg-dark " aria-labelledby="dropdownMenu2">
+                                      <button class="dropdown-item text-white" type="button">Action</button>
+                                      <button class="dropdown-item text-white" type="button">Another action</button>
+                                      <button class="dropdown-item text-white" type="button">Something else here</button>
+                                    </div>
+                                  </div>
+                                    <h6>Turn international traffic into sales</h6>
+                                    <p>35% of Shopify store traffic comes from international visitors. Create a shopping experience that converts with these localization tools.</p>
+                              </div>
+                            <div class="card-body " style="border:1px solid rgba(0,0,0,.125);">
+                                <div class="w-85 row ">
+                                    <span class="bg-light ml-3"><i class="fas fa-language fa-2x"></i></span>
+                                    <span class="ml-3">
+                                    <h6>Translate your store into different languages</h6>
+                                    <p class="card-text" style="font-size: small;">Speak your customers' language using trusted translation apps. <a href="#">Visit App Store</a></p>
+                                    </span>
+                                </div>
+                                </div>
+                                <div class="card-body " style="border:1px solid rgba(0,0,0,.125);">
+                                    <div class="w-85 row ">
+                                        <span class="bg-light ml-3"><i class="fas fa-globe fa-2x"></i></span>
+                                        <span class="ml-3">
+                                        <h6>Target customers in specific countries/regions</h6>
+                                        <p class="card-text" style="font-size: small;">Boost search engine ranking and buyer trust with international domains. 
+                                            <a href="#">Add domain</a></p>
+                                        </span>
+                                    </div>
+                           </div>
+                            <div class="card-footer bg-transparent " >
+                                <a href="#" class="btn btn-white ">Learn more about silling globally </a>
+                            </div>
+                          </div>
                     </div>
+
+                <div class="footer bg-dark row p-3 col-12 align-items-center justify-content-center mt-5 fixed-bottom">
+                        <div class="text-white">You have 14 days left in your trial</div>
+                        <div>
+                            <button class=" ml-4 btn btn-success">Select a plane</button>
+                        </div>
+                    
+                </div>
                 </div>
             </div>
 
@@ -163,7 +293,7 @@
         </section>
 
     </main>
-    <footer></footer>
+  
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
