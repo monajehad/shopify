@@ -35,15 +35,20 @@
 
 <body>
     <header>
+        
         <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top p-0 ">
             
-            
-         
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="overlay" style="display: block;"></div>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              
                     <div class="px-2 row no-gutters div">
                         <div >
                             <div class="dropdown">
                                     <button class="  bg-white row no-gutters px-2 "  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <img src="images/2217fb04df073033ccce8d125b0ea020.svg"  alt="" style="width: 25px ; height: 28px;">
+                                        <img  src="images/2217fb04df073033ccce8d125b0ea020.svg"  alt="" style="width: 25px ; height: 28px;">
                                         <div class="ml-3 mr-1" style="font-weight: 600;"><span>store-name</span></div>
                                         <span class="ml-2"><i class="fas fa-caret-down"></i></span>
                                     </button>
@@ -64,12 +69,20 @@
                       
                     </div>
                 </div>        
+                </div>
             <form class="form-inline">
                 <div class="form-group has-search" >
-                <div class="w-100">
+                <div class="w-100 dropdown">
                         <span class="fa fa-search form-control-feedback" style=" color: rgba(32,34,35,1) !important;"></span>
-                        <input type="text" class="form-control w-100 bg-light border-0"  placeholder="Search" >
-                     </div>
+                        <input type="text" class="form-control w-100 bg-light border-0 dropdown-toggle"  placeholder="Search"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton" style=" background-color: rgba(32,33,35,1); border-radius: 15px;">
+                            <div class="card py-3"style=" background-color: rgba(32,33,35,1);" >
+                                <div class="card-body text-center " style="color: rgba(153,159,164,1); font-size: 14px;">
+                                    Search your store and Shopify's resources, like apps, blogs, and help.
+                                </div>
+                              </div>
+                          </div>
+                    </div>
                     </div>
                     
                         <div class="">
@@ -77,7 +90,7 @@
                                 <a class="nav-link  " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
                                 <span class="p-2 ">MJ</span>
-                                <span class="ml-2" style="color: rgba(0, 47, 25,1);font-weight: 600;">User_Name</span>
+                                <span class="ml-2 tiltlehide" style="color: rgba(0, 47, 25,1);font-weight: 600;">User_Name</span>
                                </a>
                             
                                <div class="dropdown-menu menu1 bg-dark " aria-labelledby="navbarDropdown">
@@ -131,97 +144,218 @@
     <main class="bg-light ">
         <section>
             <div class="d-flex" id="wrapper">
-                <!-- Sidebar-->
-                <button class="btn bd-search-docs-toggle d-md-none p-0 ml-3 collapsed" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg>
-                  </button>
+               
               
-                <div class="border-end bg-light  navbar-expand-lg" id="sidebar-wrapper">
+                <div class="border-end bg-light h-100  right-0  row"  id="sidebar-wrapper" style="width: 17% !important; overflow-y: scroll">
                
 
-                    <div class="list-group list-group-flush pt-2">
-                        <a class="list-group-item list-group-item-action list-group-item-light p-1" href="#!">
-                            <div> <span class="pl-4"><i class="fas fa-home"></i></span>
-                                <span class="ml-3">Home</span>
-                            </div>
-                        </a>
-                        <a class="list-group-item list-group-item-action list-group-item-light p-1" href="#!">
-                            <div><span class="pl-4"><i class="fas fa-sort-amount-down"></i></span>
-                                <span class="ml-3">Order</span>
-                            </div>
-                        </a>
-                        <a class="list-group-item list-group-item-action list-group-item-light p-1" href="#!">
-                            <div><span class="pl-4"><i class="fab fa-product-hunt"></i></span>
-                                <span class="ml-3">Products</span>
-                            </div>
-                        </a>
-                        <a class="list-group-item list-group-item-action list-group-item-light p-1" href="#!">
-                            <div><span class="pl-4"><i class="fas fa-user"></i></span>
-                                <span class="ml-3">Customers</span>
-                            </div>
-                        </a>
-                        <a class="list-group-item list-group-item-action list-group-item-light p-1" href="#!">
-                            <div><span class="pl-4"><i class="fab fa-product-hunt"></i></span>
-                                <span class="ml-3">Products</span>
-                            </div>
-                        </a>
-                        <a class="list-group-item list-group-item-action list-group-item-light p-1" href="#!">
-                            <div><span class="pl-4"><i class="fas fa-bullhorn"></i></span>
-                                <span class="ml-3">Marketing</span>
-                            </div>
-                        </a>
-                        <a class="list-group-item list-group-item-action list-group-item-light p-1" href="#!">
-                            <div><span class="pl-4"><i class="fas fa-percentage"></i></span>
-                                <span class="ml-3">Descounts</span>
-                            </div>
-                        </a>
-                        <a class="list-group-item list-group-item-action list-group-item-light p-1 mb-4" href="#!">
-                            <div><span class="pl-4"><i class="fab fa-app-store-ios"></i></span>
-                                <span class="ml-3">Apps</span>
-                            </div>
-                        </a>
-                        <div class="bt-5 bg-light row no-gutters">
-                            <div class="pl-1">
-                                <span class="pl-4 span">SALES CHANNELS</span>
-                            </div>
-
-                            <div>
-                                <a class="list-group-item list-group-item-action list-group-item-light p-1 bg-light "
-                                    href="#!" style="border: 0;">
-                                    <span class=" ml-5"><i class="fas fa-plus-circle "></i></span>
-
-                                </a>
-                            </div>
-
+                    <div class="list-group w-100" id="list-tab" role="tablist" >
+                        <a class="list-group-item list-group-item-action active p-1 border-0 bg-light " id="list-profile-list"  href="index.html"  >
+                          <div class="row no-gutters" style="align-items: center;">
+                              <div style="padding-left: 30px;
+                              margin-right: 15px;;">
+                            <span class="icon">
+                             <span>
+                              <svg viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu" focusable="false" aria-hidden="true"><path d="M18 7.261V17.5c0 .841-.672 1.5-1.5 1.5h-2c-.828 0-1.5-.659-1.5-1.5V13H7v4.477C7 18.318 6.328 19 5.5 19h-2c-.828 0-1.5-.682-1.5-1.523V7.261a1.5 1.5 0 0 1 .615-1.21l6.59-4.82a1.481 1.481 0 0 1 1.59 0l6.59 4.82A1.5 1.5 0 0 1 18 7.26z"></path></svg>
+                             </span>
+                           </span>
                         </div>
-
-                        <div class="bt-5 bg-light row mr-0">
-                            <div class="pl-3">
-                                <a class="list-group-item list-group-item-action list-group-item-light p-1 bg-light "
-                                    href="#!" style="border: 0;">
-                                    <div><span class="pl-4"><i class="fas fa-store"></i></span>
-                                        <span class="ml-2">Online Store</span>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div>
-                                <a class="list-group-item list-group-item-action list-group-item-light p-1 bg-light "
-                                    href="#!" style="border: 0;">
-                                    <span class=" ml-4 "><i class="fas fa-eye"></i></span>
-
-                                </a>
-                            </div>
-
-                        </div >
-                        <a class="list-group-item list-group-item-action list-group-item-light p-1 mb-4" href="#!">
-                            <div ><span class="pl-4"><i class="fas fa-cog"></i></span>
-                                <span class="ml-3">Setting</span>
-                            </div>
+                            <span style="font-weight: 500;
+                            font-size: 14px;">
+                             Home
+                           </span>
+                        </div>
                         </a>
+                        
+                        <a class="list-group-item list-group-item-action p-1 border-0 bg-light" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">
+                            <div class="row no-gutters" style="align-items: center;">
+                                <div style="padding-left: 30px;
+                                margin-right: 15px;;">
+                              <span class="icon">
+                               <span>
+                                <svg viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu" focusable="false" aria-hidden="true"><path d="M11 1a1 1 0 1 0-2 0v7.586L7.707 7.293a1 1 0 0 0-1.414 1.414l3 3a1 1 0 0 0 1.414 0l3-3a1 1 0 0 0-1.414-1.414L11 8.586V1z"></path><path d="M3 14V3h4V1H2.5A1.5 1.5 0 0 0 1 2.5v15A1.5 1.5 0 0 0 2.5 19h15a1.5 1.5 0 0 0 1.5-1.5v-15A1.5 1.5 0 0 0 17.5 1H13v2h4v11h-3.5c-.775 0-1.388.662-1.926 1.244l-.11.12A1.994 1.994 0 0 1 10 16a1.994 1.994 0 0 1-1.463-.637l-.111-.12C7.888 14.664 7.275 14 6.5 14H3z"></path></svg>
+                               </span>
+                             </span>
+                           </div>
+                              <span style="font-weight: 500;
+                              font-size: 14px;">
+                               Order
+                             </span>
+                          </div>  
+                        </a>
+                        <a class="list-group-item list-group-item-action p-1 border-0 bg-light" id="list-profile-list"  href="product.html"  >
+                          <div class="row no-gutters" style="align-items: center;">
+                              <div style="padding-left: 30px;
+                              margin-right: 15px;;">
+                            <span class="icon">
+                             <span>
+                              <svg viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu" focusable="false" aria-hidden="true"><path d="M10.293 1.293A1 1 0 0 1 11 1h7a1 1 0 0 1 1 1v7a1 1 0 0 1-.293.707l-9 9a1 1 0 0 1-1.414 0l-7-7a1 1 0 0 1 0-1.414l9-9zM15.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"></path></svg>
+                            </span>
+                           </span>
+                         </div>
+                            <span style="font-weight: 500;
+                            font-size: 14px;">
+                             Product
+                           </span>
+                        </div>  
+                      </a>
+                      </a>
+                      <a class="list-group-item list-group-item-action p-1 border-0 bg-light" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">
+                        <div class="row no-gutters " style="align-items: center;">
+                            <div style="padding-left: 30px;
+                            margin-right: 15px;">
+                          <span class="icon">
+                           <span>
+                            <svg viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu" focusable="false" aria-hidden="true"><path d="M14.363 5.22a4.22 4.22 0 1 1-8.439 0 4.22 4.22 0 0 1 8.439 0zM2.67 14.469c1.385-1.09 4.141-2.853 7.474-2.853 3.332 0 6.089 1.764 7.474 2.853.618.486.81 1.308.567 2.056l-.333 1.02A2.11 2.11 0 0 1 15.846 19H4.441a2.11 2.11 0 0 1-2.005-1.455l-.333-1.02c-.245-.748-.052-1.57.567-2.056z"></path></svg>
+                          </span>
+                         </span>
+                       </div>
+                          <span style="font-weight: 500;
+                          font-size: 14px;">
+                           Customers
+                         </span>
+                      </div>  
+                      </a>  
+                      <a class="list-group-item list-group-item-action p-1 border-0 bg-light" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">
+                        <div class="row no-gutters " style="align-items: center;">
+                            <div style="padding-left: 30px;
+                            margin-right: 15px;;">
+                          <span class="icon">
+                           <span>
+                            <svg viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu" focusable="false" aria-hidden="true"><path d="M15.5 3A1.5 1.5 0 0 0 14 4.5v12a1.5 1.5 0 0 0 1.5 1.5h1a1.5 1.5 0 0 0 1.5-1.5v-12A1.5 1.5 0 0 0 16.5 3h-1zM8 8.5A1.5 1.5 0 0 1 9.5 7h1A1.5 1.5 0 0 1 12 8.5v8a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 8 16.5v-8zm-6 4A1.5 1.5 0 0 1 3.5 11h1A1.5 1.5 0 0 1 6 12.5v4A1.5 1.5 0 0 1 4.5 18h-1A1.5 1.5 0 0 1 2 16.5v-4z"></path></svg>
+                          </span>
+                         </span>
+                       </div>
+                          <span style="font-weight: 500;
+                          font-size: 14px;">
+                           Analytics
+                         </span>
+                      </div>  
+                      </a>  
+                      <a class="list-group-item list-group-item-action p-1 border-0 bg-light" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">
+                        <div class="row no-gutters " style="align-items: center;">
+                            <div style="padding-left: 30px;
+                            margin-right: 15px;;">
+                          <span class="icon">
+                           <span>
+                            <svg viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu" focusable="false" aria-hidden="true"><path d="M17.1 14.95c.412.16.9-.08.9-.45v-13c0-.37-.488-.61-.9-.45-.683.41-1.311.83-1.919 1.237-2.14 1.43-4.019 2.687-7.084 2.713H4C2.34 5 1 6.34 1 8s1.34 3 3 3h4c3.123 0 5.02 1.268 7.182 2.714.607.406 1.236.826 1.918 1.236zM9 18h-.79c-.43 0-.81-.27-.94-.67L5.07 13H9a1 1 0 0 1 1 1v3c0 .55-.45 1-1 1z"></path></svg>
+                          </span>
+                         </span>
+                       </div>
+                          <span style="font-weight: 500;
+                          font-size: 14px;">
+                           Marketing
+                         </span>
+                      </div>  
+                      </a>  
+                      <a class="list-group-item list-group-item-action p-1 border-0 bg-light" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">
+                        <div class="row no-gutters" style="align-items: center;">
+                            <div style="padding-left: 30px;
+                            margin-right: 15px;;">
+                          <span class="icon">
+                           <span>
+                            <svg viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu" focusable="false" aria-hidden="true"><path fill-rule="evenodd" d="M11.566.66a2.189 2.189 0 0 0-3.132 0l-.962.985a2.189 2.189 0 0 1-1.592.66l-1.377-.017a2.189 2.189 0 0 0-2.215 2.215l.016 1.377a2.189 2.189 0 0 1-.66 1.592l-.984.962a2.189 2.189 0 0 0 0 3.132l.985.962c.428.418.667.994.66 1.592l-.017 1.377a2.189 2.189 0 0 0 2.215 2.215l1.377-.016a2.189 2.189 0 0 1 1.592.66l.962.984c.859.88 2.273.88 3.132 0l.962-.985a2.189 2.189 0 0 1 1.592-.66l1.377.017a2.189 2.189 0 0 0 2.215-2.215l-.016-1.377a2.189 2.189 0 0 1 .66-1.592l.984-.962c.88-.859.88-2.273 0-3.132l-.985-.962a2.189 2.189 0 0 1-.66-1.592l.017-1.377a2.189 2.189 0 0 0-2.215-2.215l-1.377.016a2.189 2.189 0 0 1-1.592-.66L11.566.66zM7 8.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm6 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm.778-8.278a1.1 1.1 0 0 1 0 1.556l-6 6a1.1 1.1 0 1 1-1.556-1.556l6-6a1.1 1.1 0 0 1 1.556 0z"></path></svg>
+                          </span>
+                         </span>
+                       </div>
+                          <span style="font-weight: 500;
+                          font-size: 14px;">
+                           Descounts
+                         </span>
+                      </div>  
+                      </a>  
+                      <a class="list-group-item list-group-item-action p-1 border-0 bg-light" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">
+                        <div class="row no-gutters " style="align-items: center;">
+                            <div style="padding-left: 30px;
+                            margin-right: 15px;;">
+                          <span class="icon">
+                           <span>
+                            <svg viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu" focusable="false" aria-hidden="true"><path d="M9 9H1V2.5A1.5 1.5 0 0 1 2.5 1H9v8zm0 2v8H2.5A1.5 1.5 0 0 1 1 17.5V11h8zm2 0v8h6.5a1.5 1.5 0 0 0 1.5-1.5V11h-8zm4-10a1 1 0 0 1 1 1v2h2a1 1 0 1 1 0 2h-2v2a1 1 0 1 1-2 0V6h-2a1 1 0 1 1 0-2h2V2a1 1 0 0 1 1-1z"></path></svg>
+                          </span>
+                         </span>
+                       </div>
+                          <span style="font-weight: 500;
+                          font-size: 14px;">
+                           Apps
+                          </span>
+                      </div>  
+                      </a>
+                     
+                      <div class="bt-5 bg-light row no-gutters align-items-center" style="    justify-content: space-between;">
+                        <div class="pl-4 ">
+                            <span class=" span" style="   font-size: 12px;color: rgba(109,113,117,1);font-weight: 600;">SALES CHANNELS</span>
+                        </div>
+                      
+                        <div>
+                      <a class="list-group-item list-group-item-action p-1 border-0 bg-light" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">
+                        
+                            <div style="padding: 0 10px;">
+                          <span class="icon">
+                           <span>
+                            <svg viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu" focusable="false" aria-hidden="true"><path d="M15 10a1 1 0 0 1-1 1h-3v3a1 1 0 1 1-2 0v-3H6a1 1 0 1 1 0-2h3V6a1 1 0 0 1 2 0v3h3a1 1 0 0 1 1 1zm-5-8a8 8 0 1 0 0 16 8 8 0 0 0 0-16z"></path></svg>
+                          </span>
+                         </span>
+                       
+                      </div>  
+                      </a>
+                      </div>
+                      </div>
+                      <div class="bt-5 bg-light row no-gutters align-items-center" style="    justify-content: space-between">
+  
+                        <div class="pl-1">
+                          
+                            <a class="list-group-item list-group-item-action p-1 border-0 bg-light" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">
+                              <div class="row no-gutters " style="align-items: center;">
+                                <div style="padding-left: 27px;
+                                margin-right: 15px;">
+                              <span class="icon">
+                              <span>
+                                <i class="fas fa-store"></i>
+                               </span>
+                            </span>
+                            </div>
+                              <span style="font-weight: 500;
+                              font-size: 14px;">
+                              Online store
+                              </span>
+                            </div>  
+                        </a>
+                        </div>
+                        <div >
+                        <a class="list-group-item list-group-item-action p-1 border-0 bg-light" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">
+                          <div style="padding: 0 10px;">
+                            <span class="icon">
+                             <span>
+                                <svg viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu" focusable="false" aria-hidden="true"><path d="M17.928 9.628C17.837 9.399 15.611 4 10 4S2.162 9.399 2.07 9.628a1.017 1.017 0 0 0 0 .744C2.163 10.601 4.389 16 10 16s7.837-5.399 7.928-5.628a1.017 1.017 0 0 0 0-.744zM10 14a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-6a2 2 0 1 0 .002 4.001A2 2 0 0 0 9.999 8z"></path></svg>
+                            </span>
+                           </span>
+                           </div>
+                        </a>
+                        </div>
+                        </div>
+                        <a class="list-group-item list-group-item-action p-1 border-0 bg-light" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">
+                            <div class="row no-gutters " style="align-items: center;">
+                                <div style="padding-left: 30px;
+                                margin-right: 15px;;">
+                              <span class="icon">
+                               <span>
+                                <svg viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu" focusable="false" aria-hidden="true"><path fill-rule="evenodd" d="M9.027 0a1 1 0 0 0-.99.859l-.37 2.598A6.993 6.993 0 0 0 5.742 4.57l-2.437-.98a1 1 0 0 0-1.239.428L.934 5.981a1 1 0 0 0 .248 1.287l2.066 1.621a7.06 7.06 0 0 0 0 2.222l-2.066 1.621a1 1 0 0 0-.248 1.287l1.132 1.962a1 1 0 0 0 1.239.428l2.438-.979a6.995 6.995 0 0 0 1.923 1.113l.372 2.598a1 1 0 0 0 .99.859h2.265a1 1 0 0 0 .99-.859l.371-2.598a6.995 6.995 0 0 0 1.924-1.112l2.438.978a1 1 0 0 0 1.238-.428l1.133-1.962a1 1 0 0 0-.249-1.287l-2.065-1.621a7.063 7.063 0 0 0 0-2.222l2.065-1.621a1 1 0 0 0 .249-1.287l-1.133-1.962a1 1 0 0 0-1.239-.428l-2.437.979a6.994 6.994 0 0 0-1.924-1.113L12.283.86a1 1 0 0 0-.99-.859H9.027zm1.133 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path></svg>
+                            </span>
+                             </span>
+                           </div>
+                              <span style="font-weight: 500;
+                              font-size: 14px;">
+                               Setting
+                              </span>
+                          </div>  
+                          </a>
+                    </div>
+                    
+                        
+                       
                     </div>
                
-              </div>
+              
                 <div class="right w-100  " style="margin-bottom: 100px !important;">
                     <div class="col-md-7 mx-auto mt-5 mb-4 col-12">
                         <div class="card mb-5">
@@ -239,7 +373,7 @@
                             <div class="row no-gutters">
                               <div class="col-md-4">
                                 
-                                        <img class="" src="images/4ab912d5-c697-4010-a0de-a5c25b52f5ac.jfif" alt="">
+                                        <img class="imghead" src="images/4ab912d5-c697-4010-a0de-a5c25b52f5ac.jfif" alt="">
                                        <a class="play" > <i class="fas fa-play fa-2x "></i></a>
                                     </button><p class="img_p">4:55</p>
                               </div>
@@ -252,19 +386,19 @@
                                         <div class="dropdown-menu bg-white " aria-labelledby="dropdownMenu2">
                                           <button class="dropdown-item p-2" type="button">
                                               <span class="row no-gutters">
-                                                  <span  class="mr-3"><i class="fas fa-times"></i></span>
+                                                  <span  class="mr-3"><i class="fas fa-times" style=" color:rgba(92, 95, 98, 1);"></i></span>
                                                   <span>Dismiss</span>
                                               </span>
                                           </button>
                                           <button class="dropdown-item p-2 " type="button">
                                               <span class="row no-gutters"> 
-                                                <span class="mr-2" ><i class="fas fa-eye"></i></span>
+                                                <span class="mr-2" ><i class="fas fa-eye" style=" color:rgba(92, 95, 98, 1);"></i></span>
                                                 <span >View transcript</span>
                                               </span>
                                           </button>
                                           <button class="dropdown-item p-2 " type="button">
                                               <span class="row no-gutters">
-                                                  <span class="mr-2"><i class="fas fa-comment-dots"></i></span>
+                                                  <span class="mr-2"><i class="fas fa-comment-dots" style=" color:rgba(92, 95, 98, 1);"></i></span>
                                                   <span>Feedback</span>
                                                   </span>
                                           </button>
@@ -278,6 +412,194 @@
                             </div>
                           </div>
 
+                          <div class="card mb-5" style="height: 423px;"> 
+                            <div class="card-header bg-white bg-transparent ">
+                                <div class="row no-gutters align-items-center " style="justify-content:space-between;">
+                                    <div class=" ">
+                                    
+                                         <span style="font-size: 20px;
+                                         line-height: 2.8rem;
+                                         font-weight: 400;">
+                                            Get ready to sell online. Try these tips to get started.</span>
+                                     
+                                 </div>
+                                <div class="dropdown text-right mb-0">
+                                    <span id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                                        <i class="fas fa-ellipsis-h" ></i>
+                                    </span>
+                                   
+                                    <div class="dropdown-menu bg-white " aria-labelledby="dropdownMenu2">
+                                        <button class="dropdown-item p-2" type="button">
+                                            <span class="row no-gutters">
+                                                <span  class="mr-3"><i class="fas fa-times" style=" color:rgba(92, 95, 98, 1);"></i></span>
+                                                <span>Dismiss</span>
+                                            </span>
+                                        </button>
+                                        <button class="dropdown-item p-2 " type="button">
+                                            <span class="row no-gutters">
+                                                <span class="mr-2"><i class="fas fa-comment-dots" style=" color: rgba(92, 95, 98, 1);"></i></span>
+                                                <span>Feedback</span>
+                                                </span>
+                                        </button>
+                                      </div>
+                                  </div>
+                                 
+                        </div>
+                            </div>
+                            <div class="row" >
+                            <div class="col-4 ">
+                              <div class="list-group" id="list-tab" role="tablist">
+                                <a class="list-group-item  list2 list-group-item-action active p-3 "  id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">
+                                  <div class="row " style="align-items: center;">
+                                      <div style="padding-left: 20px;
+                                      margin-right: 25px;;">
+                                    <span class="icon">
+                                     <span>
+                                        <svg  viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu" focusable="false" aria-hidden="true"><path d="M10.293 1.293A1 1 0 0 1 11 1h7a1 1 0 0 1 1 1v7a1 1 0 0 1-.293.707l-9 9a1 1 0 0 1-1.414 0l-7-7a1 1 0 0 1 0-1.414l9-9zM15.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"></path></svg>
+                                     </span>
+                                   </span>
+                                </div>
+                                    <span style="font-weight: 500;
+                                    font-size: 14px;">
+                                     Add product
+                                   </span>
+                                </div>
+                                </a>
+                                
+                                <a class="list-group-item  list2 list-group-item-action p-3" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">
+                                    <div class="row " style="align-items: center;">
+                                        <div style="padding-left: 20px;
+                                        margin-right: 25px;;">
+                                      <span class="icon">
+                                       <span>
+                                        <svg   viewBox="0 0 24 24" class="Polaris-Icon__Svg_375hu" focusable="false" aria-hidden="true"><path d="M22 3.09a1 1 0 00-.65-1 1 1 0 00-.42-.09h-.07a17.35 17.35 0 00-13.2 10.07A4.92 4.92 0 007 12a5 5 0 00-5 5v4a1 1 0 001 1h4a5 5 0 005-5 4.9 4.9 0 00-.07-.66A17.35 17.35 0 0022 3.15v-.06zm-6.85 8.76a13 13 0 00-2.95-3.06 15.77 15.77 0 017.55-4.55 15.62 15.62 0 01-4.6 7.61zm-2.67 1.95q-.57.34-1.21.65a5 5 0 00-.33-.48l-.06-.08a5 5 0 00-.76-.76l-.12-.07a5 5 0 00-.49-.33q.32-.65.66-1.23.35-.59.72-1.12a12.1 12.1 0 012.63 2.75q-.52.36-1.09.7zM7 20H4v-3a3 3 0 113 3z"></path></svg>
+                                       </span>
+                                     </span>
+                                   </div>
+                                      <span style="font-weight: 500;
+                                      font-size: 14px;">
+                                       Customize theme
+                                     </span>
+                                  </div>  
+                                </a>
+                                <a class="list-group-item list2 list-group-item-action p-3" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">
+                                    <div class="row " style="align-items: center;">
+                                        <div style="padding-left: 20px;
+                                        margin-right: 25px;;">
+                                      <span class="icon">
+                                       <span>
+                                        <svg viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu" focusable="false" aria-hidden="true"><path d="M13.903 8c.06.629.097 1.292.097 2a1 1 0 0 1-2 0c0-.713-.039-1.378-.105-2H8.092c-.139 1.33-.14 2.67-.004 4H10a1 1 0 0 1 0 2H8.416c.469 2.08 1.202 3.41 1.585 4 0 0 .789.013.926.002a1.008 1.008 0 0 1 1.07.925 1 1 0 0 1-.924 1.07C10.979 20.004 10 20 10 20 4.486 20 0 15.514 0 10 0 4.485 4.486 0 10 0s10 4.485 10 10c0 .379-.036.749-.079 1.116a1.001 1.001 0 0 1-1.987-.233c.035-.291.066-.583.066-.883 0-.692-.098-1.36-.263-2h-3.834zM9.988 2.036c-.386.606-1.1 1.931-1.564 3.964h3.137c-.466-2.033-1.185-3.358-1.573-3.964zM2.263 12h3.819a21.604 21.604 0 0 1-.095-1.996c0-.67.033-1.338.096-2.004h-3.82A7.946 7.946 0 0 0 2 10a7.96 7.96 0 0 0 .263 2zm.819 2a8.031 8.031 0 0 0 4.437 3.601A16.293 16.293 0 0 1 6.371 14H3.082zm3.291-8a16.235 16.235 0 0 1 1.15-3.603A8.03 8.03 0 0 0 3.082 6h3.291zm7.239 0h3.305a8.029 8.029 0 0 0-4.465-3.612A16.128 16.128 0 0 1 13.612 6z"></path><path d="m15.223 18.945-2.55-5.61a.5.5 0 0 1 .662-.662l5.61 2.55a.5.5 0 0 1 .017.903l-1.742.87a.5.5 0 0 0-.223.224l-.871 1.742a.5.5 0 0 1-.903-.017z"></path></svg>                                       </span>
+                                     </span>
+                                  </div>
+                                      <span style="font-weight: 500;
+                                      font-size: 14px;">
+                                       Add domain
+                                     </span>
+                                  </div>
+                                </a>
+                                <div class="bg-light" style=" border-right: 1px solid rgba(0,0,0,.125); height: 156px;" ></div>
+                              </div>
+                            </div>
+                            <div class="col-8">
+                              <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active p-3" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                                  <div class="row" style="justify-content: space-around;">
+                                      <div class="colum">
+                                          <div class="haeding mb-2">
+                                              <h6>Add your first product</h6>
+                                          </div>
+                                          <p style="font-size: 14px;">Add physical items, digital downloads, services, or anything else you dream up.</p>
+                                         <div class="but">
+                                              <a href="" class="btn col"> Add product</a>
+                                         </div>
+                                         <div class="footer-col">
+                                                <div>
+                                                    <span class="icon" style="fill: rgba(0,160,172,1);">
+                                                        <svg viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu" focusable="false" aria-hidden="true"><path fill-rule="evenodd" d="M18 10a8 8 0 1 0-16 0 8 8 0 0 0 16 0zm-9 3a1 1 0 1 0 2 0v-2a1 1 0 1 0-2 0v2zm0-6a1 1 0 1 0 2 0 1 1 0 0 0-2 0z"></path></svg>
+
+                                                    </span>
+                                                </div>
+                                                 <div class="more"><a target="_blank" href="#" rel="noopener noreferrer" data-polaris-unstyled="true" class="Polaris-Link_yj5sy">Learn more about products</a></div>
+                                                 </div>
+                                              </div>
+                                            <div class="img1">
+                                            <img src="images/home-onboard-prod-incomplete-ce8aa00f08819937af17dff42020f5ac63e0ce48b11c34b3b9511d6ee017f7f2.svg" alt="">
+
+                                         </div>
+                                      <div>
+
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                                    <div class="tab-pane fade show active p-3" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                                        <div class="row" style="justify-content: space-around;">
+                                            <div class="colum">
+                                                <div class="haeding mb-2">
+                                                    <h6>Edit the look and feel of your online store</h6>
+                                                </div>
+                                                <p style="font-size: 14px;">Choose a theme and add your logo, colors, and images to reflect your brand.</p>
+                                               <div class="but">
+                                                    <a href="" class="btn col"> Customize theme</a>
+                                               </div>
+                                               <div class="footer-col">
+                                                   <div>
+                                                       <span class="icon" style="fill: rgba(0,160,172,1);">
+                                                          <svg viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu" focusable="false" aria-hidden="true"><path fill-rule="evenodd" d="M18 10a8 8 0 1 0-16 0 8 8 0 0 0 16 0zm-9 3a1 1 0 1 0 2 0v-2a1 1 0 1 0-2 0v2zm0-6a1 1 0 1 0 2 0 1 1 0 0 0-2 0z"></path></svg>
+      
+                                                       </span>
+                                                   </div>
+                                                   <div class="more"><a target="_blank" href="#" rel="noopener noreferrer" data-polaris-unstyled="true" class="Polaris-Link_yj5sy">Learn more about themes</a></div>
+                                               </div>
+                                              </div>
+                                              <div class="img1">
+                                                  <img src="images/home-onboard-theme-incomplete-9c0bdc3666d0eee69dd8131608561f46ec471d40ed95ebb807709a9bb4f9fd0c.svg" alt="">
+      
+                                              </div>
+                                            <div>
+      
+                                            </div>
+                                        </div>
+                                </div>
+                               
+                                
+                              </div>
+                              <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                                <div class="tab-pane fade show active p-3" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                                    <div class="row" style="justify-content: space-around;">
+                                        <div class="colum">
+                                            <div class="haeding mb-2">
+                                                <h6>Strengthen your brand with a custom domain
+                                                </h6>
+                                            </div>
+                                            <p style="font-size: 14px;">Your current domain is monajehad.myshopify.com but you can add a custom domain to help customers find your online store..</p>
+                                           <div class="but">
+                                                <a href="" class="btn col"> Add domain</a>
+                                           </div>
+                                           <div class="footer-col">
+                                               <div>
+                                                   <span class="icon" style="fill: rgba(0,160,172,1);">
+                                                      <svg viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu" focusable="false" aria-hidden="true"><path fill-rule="evenodd" d="M18 10a8 8 0 1 0-16 0 8 8 0 0 0 16 0zm-9 3a1 1 0 1 0 2 0v-2a1 1 0 1 0-2 0v2zm0-6a1 1 0 1 0 2 0 1 1 0 0 0-2 0z"></path></svg>
+  
+                                                   </span>
+                                               </div>
+                                               <div class="more"><a target="_blank" href="#" rel="noopener noreferrer" data-polaris-unstyled="true" class="Polaris-Link_yj5sy">Learn more about domains</a></div>
+                                           </div>
+                                          </div>
+                                          <div class="img1">
+                                              <img src="images/home-onboard-domain-incomplete-b7b91c4368b4716d22343af73d5949da5c2d00678c60f839cb7e2ea06ec0b602.svg" alt="">
+  
+                                          </div>
+                                        <div>
+  
+                                        </div>
+                                    </div>
+                            </div>
+                            </div>
+                            </div>
+                          </div>
+                           </div>
+                             </div>
                           <div class="card mb-5" >
                             <div class="card-body">
                                 <div class="dropdown text-right mb-0">
@@ -288,13 +610,13 @@
                                         <div class="dropdown-menu bg-white " aria-labelledby="dropdownMenu2">
                                             <button class="dropdown-item p-2" type="button">
                                                 <span class="row no-gutters">
-                                                    <span  class="mr-3"><i class="fas fa-times"></i></span>
+                                                    <span  class="mr-3"><i class="fas fa-times" style=" color:rgba(92, 95, 98, 1);"></i></span>
                                                     <span>Dismiss</span>
                                                 </span>
                                             </button>
                                             <button class="dropdown-item p-2 " type="button">
                                                 <span class="row no-gutters">
-                                                    <span class="mr-2"><i class="fas fa-comment-dots"></i></span>
+                                                    <span class="mr-2"><i class="fas fa-comment-dots" style=" color:rgba(92, 95, 98, 1);"></i></span>
                                                     <span>Feedback</span>
                                                     </span>
                                             </button>
@@ -312,7 +634,7 @@
                           <div class="card mb-5" >
                             <div class="row no-gutters ">
                               <div class="col-md-4 text-center bg-light ">
-                                <span><i class="fas fa-book-open fa-3x"></i></span>
+                                <span><i class="fas fa-book-open fa-3x" style=" color:rgba(92, 95, 98, 1);"></i></span>
                                 <p class="mt-3">SUGGESTED READING</p>
                               </div>
                               <div class="col-md-8">
@@ -325,13 +647,13 @@
                                         <div class="dropdown-menu bg-white " aria-labelledby="dropdownMenu2">
                                             <button class="dropdown-item p-2" type="button">
                                                 <span class="row no-gutters">
-                                                    <span  class="mr-3"><i class="fas fa-times"></i></span>
+                                                    <span  class="mr-3"><i class="fas fa-times" style=" color:rgba(92, 95, 98, 1);"></i></span>
                                                     <span>Dismiss</span>
                                                 </span>
                                             </button>
                                             <button class="dropdown-item p-2 " type="button">
                                                 <span class="row no-gutters">
-                                                    <span class="mr-2"><i class="fas fa-comment-dots"></i></span>
+                                                    <span class="mr-2"><i class="fas fa-comment-dots" style=" color:rgba(92, 95, 98, 1);"></i></span>
                                                     <span>Feedback</span>
                                                     </span>
                                             </button>
@@ -358,13 +680,13 @@
                                     <div class="dropdown-menu bg-white " aria-labelledby="dropdownMenu2">
                                         <button class="dropdown-item p-2" type="button">
                                             <span class="row no-gutters">
-                                                <span  class="mr-3"><i class="fas fa-times"></i></span>
+                                                <span  class="mr-3"><i class="fas fa-times" style=" color:rgba(92, 95, 98, 1);"></i></span>
                                                 <span>Dismiss</span>
                                             </span>
                                         </button>
                                         <button class="dropdown-item p-2 " type="button">
                                             <span class="row no-gutters">
-                                                <span class="mr-2"><i class="fas fa-comment-dots"></i></span>
+                                                <span class="mr-2"><i class="fas fa-comment-dots" style=" color:rgba(92, 95, 98, 1);"></i></span>
                                                 <span>Feedback</span>
                                                 </span>
                                         </button>
@@ -373,18 +695,19 @@
                                     <h6>Turn international traffic into sales</h6>
                                     <p>35% of Shopify store traffic comes from international visitors. Create a shopping experience that converts with these localization tools.</p>
                               </div>
-                            <div class="card-body " style="border:1px solid rgba(0,0,0,.125);">
+                            <div class="card-body ">
+                               
                                 <div class="w-85 row ">
-                                    <span class="bg-light ml-3"><i class="fas fa-language fa-2x"></i></span>
+                                    <span class="bg-light ml-3" ><i class="fas fa-language fa-2x"  style="padding: 7px; color:rgba(92, 95, 98, 1);"></i></span>
                                     <span class="ml-3">
                                     <h6 style="font-weight: 400;">Translate your store into different languages</h6>
                                     <p class="card-text" style="color: rgba(109,113,117,1);">Speak your customers' language using trusted translation apps. <a href="#">Visit App Store</a></p>
                                     </span>
                                 </div>
                                 </div>
-                                <div class="card-body " style="border:1px solid rgba(0,0,0,.125);">
+                                <div class="card-body  " style="border-top:1px solid rgba(0,0,0,.125);" >
                                     <div class="w-85 row ">
-                                        <span class="bg-light ml-3"><i class="fas fa-globe fa-2x"></i></span>
+                                        <span class="bg-light ml-3"><i class="fas fa-globe fa-2x" style="padding: 11px; color:rgba(92, 95, 98, 1);"></i></span>
                                         <span class="ml-3">
                                         <h6 style="font-weight: 400;">Target customers in specific countries/regions</h6>
                                         <p class="card-text" style="color: rgba(109,113,117,1);">Boost search engine ranking and buyer trust with international domains. 
@@ -396,15 +719,15 @@
                                 <a href="#" class="btn btn-white " style="font-weight: 500;">Learn more about silling globally </a>
                             </div>
                           </div>
+                           
                     </div>
-
-                <div class="footer  row p-3 col-12 align-items-center justify-content-center mt-5 fixed-bottom" style="background-color: rgba(32,33,35,1);">
+                  <div class="footer  row p-3 col-12 align-items-center justify-content-center mt-5 fixed-bottom" style="background-color: rgba(32,33,35,1);">
                         <div class="text-white">You have 14 days left in your trial</div>
                         <div>
                             <button class=" ml-4 btn text-white " style="background-color: rgba(0,128,96,1);  ">Select a plane</button>
                         </div>
                     
-                </div>
+                        </div>
                 </div>
             </div>
 
